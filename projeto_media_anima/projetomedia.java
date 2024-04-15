@@ -12,19 +12,19 @@ public class  projetomedia {
         String notaA3 =
             JOptionPane.showInputDialog("Nota A3"); 
 
-        int number1 = Integer.parseInt(notaA1);
-        int number2 = Integer.parseInt(notaA2);
-        int number3 = Integer.parseInt(notaA3);
+        Float number1 = Float.parseFloat(notaA1);
+        Float number2 = Float.parseFloat(notaA2);
+        Float number3 = Float.parseFloat(notaA3);
 
-        int sum = number1 + number2 + number3;
+        Float sum = number1 + number2 + number3;
 
-    if (number1 <= 30) {  
+    if (number1 <= 3) {  
         
-    if (number2 <= 30) {
+    if (number2 <= 3) {
     
-    if (number3 <= 40) {
+    if (number3 <= 4) {
 
-        if( sum >= 70) {
+        if( sum >= 7) {
         JOptionPane.showMessageDialog(null, "A sua média é: " + sum,  "Média", JOptionPane.PLAIN_MESSAGE); 
             JOptionPane.showMessageDialog(null,"Parabéns, você foi aprovado", "Resultado", JOptionPane.PLAIN_MESSAGE);
         
@@ -34,14 +34,14 @@ public class  projetomedia {
             String notaAI =
                 JOptionPane.showInputDialog("Nota AI");
             
-        int number4 = Integer.parseInt(notaAI);
+        Float number4 = Float.parseFloat(notaAI);
 
-        if (number4 <= 30) { 
+        if (number4 <= 3) { 
             
             if (number1 > number2) {
-                int sum2 = number1 + number3 + number4;
+                Float sum2 = number1 + number3 + number4;
 
-                if( sum2 >= 70) {
+                if( sum2 >= 7) {
                     JOptionPane.showMessageDialog(null, "A sua nova média é: " + sum2,  "Média", JOptionPane.PLAIN_MESSAGE); 
                         JOptionPane.showMessageDialog(null,"Parabéns, você foi aprovado", "Resultado", JOptionPane.PLAIN_MESSAGE);
                 }else {
@@ -49,9 +49,9 @@ public class  projetomedia {
                         JOptionPane.showMessageDialog(null,"Você foi reprovado", "Resultado", JOptionPane.PLAIN_MESSAGE);
                 } 
             }else {
-                int sum3 = number2 + number3 + number4;
+                Float sum3 = number2 + number3 + number4;
 
-                if( sum3 >= 70) {
+                if( sum3 >= 7) {
                     JOptionPane.showMessageDialog(null, "A sua nova média é: " + sum3,  "Média", JOptionPane.PLAIN_MESSAGE); 
                         JOptionPane.showMessageDialog(null,"Parabéns, você foi aprovado", "Resultado", JOptionPane.PLAIN_MESSAGE);
                 }else {
